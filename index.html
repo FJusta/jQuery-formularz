@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formularz-jQuery</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+      <div class="form-wrapper col-md-6 col-xs-12">
+        <form>
+          <div class="form-group">
+            <label for="price">Kwota</label>
+            <input id="price" class="form-control">
+            <span>Pole jest wymagane!</span>
+          </div>
+          <div class="form-group">
+            <label for="country">Kraj</label>
+            <select id="country" class="form-control">
+              <option value="wybierz">Wybierz</option>
+              <option value="polska">Polska</option>
+              <option value="niemcy">Niemcy</option>
+              <option value="czechy">Czechy</option>
+            </select>
+            <span>Pole jest wymagane!</span>
+          </div>
+          <div class="form-group">
+            <label for="product">Produkt</label>
+            <select id="product" class="form-control">
+              <option value="wybierz">Wybierz</option>
+              <option value="hotel">Hotel</option>
+              <option value="autostrada">Autostrada</option>
+              <option value="paliwo">Paliwo</option>
+            </select>
+            <span>Pole jest wymagane!</span>
+          </div>
+          
+          <button id="calculate" class="btn btn-success">Oblicz</button>
+        </form>
+      </div>
+      
+      <hr>
+      
+      <div class="col-md-6 col-xs-12 tax-wrapper">
+        <div class="panel panel-default">
+          <div class="panel-heading">Podatek</div>
+          <div id="tax" class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
